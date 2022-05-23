@@ -1,0 +1,81 @@
+.sobre-container h1 {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.sobre-container {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.sobre-container p {
+  max-width: 470px;
+  margin-right: 30px;
+}
+
+.sobre-container h2 {
+  margin-bottom: 70px;
+}
+
+.sobre-container div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+}
+
+.subtitle-sobre,
+.subtitle-sobre-direita {
+  display: flex;
+  justify-content: space-between;
+  max-width: 970px;
+}
+
+.sobre-direita .subtitle-sobre-direita::before,
+.subtitle-sobre::after,
+.sobre-meio h2::after,
+.sobre-meio h2::before {
+  content: "";
+  align-self: center;
+  height: 2px;
+  background: #000;
+}
+
+.subtitle-sobre::after {
+  width: 65%;
+  margin-left: 20px;
+}
+
+.sobre-direita .subtitle-sobre-direita::before {
+  width: 75%;
+  margin-right: 20px;
+}
+
+.sobre-direita div {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.sobre-direita p {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+.sobre-meio {
+  text-align: center;
+}
+
+.sobre-meio img {
+  margin: 0 auto;
+}
+
+.sobre-meio h2::after {
+  width: calc(30% - 40px);
+  margin-left: 30px;
+}
+
+.sobre-meio h2::before {
+  width: calc(30% - 40px);
+  margin-right: 30px;
+}
